@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Break</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>10 Break</h1>
+        <label for="hoursSlept">Hours Slept:</label>
+        <input type="number" id="hoursSlept" min="0" max="10">
+        <label for="minutesSlept">Minutes Slept:</label>
+        <input type="number" id="minutesSlept" min="0" max="59">
+        <button onclick="calculateResumeTime()">Calculate Resume Time</button>
+        <div id="results">
+            <h2>Resume Time in US Time Zones:</h2>
+            <ul id="timeZones">
+                <!-- Time zones will be populated here -->
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
