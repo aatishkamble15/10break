@@ -52,7 +52,7 @@ async function calculateResumeTime() {
 // Function to get current Phoenix time from World Time API
 async function getCurrentPhoenixTime() {
     try {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/America/Phoenix');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/America/Phoenix');
         if (!response.ok) {
             console.error('Failed to fetch the current time for Phoenix, AZ.');
             return null;
